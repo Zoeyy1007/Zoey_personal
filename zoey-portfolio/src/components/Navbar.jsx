@@ -37,9 +37,19 @@ const Navbar = () =>{
 
             {/* The Sidebar */}
             <aside
-                className={`fixed top-0 left-0 h-full w-full md:w-80 bg-zinc-800 text-white shadow-2xl z-[80]
+                className={`fixed top-0 left-0 h-full w-full md:w-80 bg-gray-700 text-white shadow-2xl z-[80]
                     transition-transform duration-500 ease-in-out transform ${SideBarIsOpen ? 'translate-x-0':'-translate-x-full'}`}>
-                
+                <div className="p-10 flex flex-col h-full">
+                    <button onClick={() => setSideBarIsOpen(false)} className="self-end text-2xl">x</button>
+
+                    <nav className="mt-10 flex flex-col space-y-8">
+                        {menuItem.map((item) => (
+                            <Link key={item.name} to={item.path} onClick={() =>setSideBarIsOpen(false)}>
+                                {item.name}
+                            </Link>
+                        ))}
+                    </nav>
+                </div>
             </aside>
         </>
     );
