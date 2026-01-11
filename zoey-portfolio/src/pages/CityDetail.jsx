@@ -14,7 +14,7 @@ const S3_PHOTO_DATA = {
 
 export default function CityDetail() {
     const {cityName} = useParams();
-    const photos = S3_PHOTO_DATA[cityName] || [];
+    const photos = S3_PHOTO_DATA[cityName?.toLowerCase()] || [];
 
     //state to track the currently selected image index
     const [selectedIndex, setSelectedIndex] = useState(0);
