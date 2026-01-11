@@ -17,9 +17,9 @@ const Navbar = () =>{
                 {/* The Hamburger button */}
                 <button onClick={()=>setSideBarIsOpen(true)} 
                     className="flex flex-col hover:opacity-70 tracking-widest">
+                    <span className="w-6 h-0.5 bg-slate-400 py-0.5"></span>
                     <span className="w-6 h-0.5 bg-slate-400"></span>
-                    <span className="w-6 h-0.5 bg-slate-400"></span>
-                    <span className="w-6 h-0.5 bg-slate-400"></span>
+                    <span className="w-6 h-0.5 bg-slate-400 py-0.5"></span>
                 </button>
                 <h1 className="text-lg text-slate-200 font-bold">
                     ZOEY YANG

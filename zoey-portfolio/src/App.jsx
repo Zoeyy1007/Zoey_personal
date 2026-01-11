@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Gallery from './pages/Gallery'
 import Home from './pages/Home'
 import CSProjects from "./pages/CSProjects";
+import CityDetail from './pages/CityDetail';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/gallery" element={<Gallery/>}/>
+        <Route path="/gallery/:cityName" element={<CityDetail />}/>
         <Route path="/projects" element={<CSProjects/>} />
       </Routes>
 

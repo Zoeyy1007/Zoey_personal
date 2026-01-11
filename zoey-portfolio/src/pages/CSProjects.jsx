@@ -25,6 +25,14 @@ const myProjects = [
         long: `Architected a responsive website using React and Vite, featuring dynamic routing. 
             Developed a custom, interactive UI using Tailwind CSS. `,
         github: "https://github.com/Zoeyy1007/Zoey_personal"
+    },
+    {
+        id: 4,
+        title: "Hotel Management Database System",
+        short: "Relational database system for hotel operations using Java and PostgreSQL",
+        long: `Developed backend logic for data entry module, using JDBC to execute secure SQL queries. 
+            Implemented robust input validation to ensure data integrity, handling edge cases for numeric IDs and date formats.
+            Optimized database performance through the implementation of SQL indexes. `
     }
 ]
 
@@ -63,10 +71,10 @@ export default function CSProjects(){
                                 <p>{project.long}</p>
 
                                 {/* The link to github pages */}
-                                <div className='flex gap-4'>
+                                <div className='flex gap-4 mt-3'>
                                     <a href={project.github} target='_blank' rel='noopener noreferrer'
-                                        className="flex items-center gap-2 bg-zinc-700 hover:bg-zinc-600 text-white px-4 py-2 rounded-lg transition-colors text-sm font-medium">
-                                        <Github size={18}/>Source Code
+                                        className="flex items-center gap-2 bg-zinc-700 hover:bg-zinc-600 text-white px-3 py-2 rounded-lg transition-colors text-sm font-medium">
+                                        <Github size={14}/>Source Code
                                     </a>
                                 </div>
                             </div>
