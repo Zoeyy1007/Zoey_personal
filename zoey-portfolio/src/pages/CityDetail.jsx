@@ -5,10 +5,23 @@ const S3_PHOTO_DATA = {
     "guangzhou":[
         "https://zoey-photography-storage.s3.us-east-2.amazonaws.com/Guangzhou/guangzhou1.webp",
         "https://zoey-photography-storage.s3.us-east-2.amazonaws.com/Guangzhou/guangzhou2.webp",
-        "https://zoey-photography-storage.s3.us-east-2.amazonaws.com/Guangzhou/guangzhou3.webp"
+        "https://zoey-photography-storage.s3.us-east-2.amazonaws.com/Guangzhou/guangzhou3.webp",
+        "https://zoey-photography-storage.s3.us-east-2.amazonaws.com/Guangzhou/guangzhou4.webp"
     ],
     "las-vegas":[
         "https://zoey-photography-storage.s3.us-east-2.amazonaws.com/LasVegas/LasVegas1.webp"
+    ],
+    "bay-area":[
+        "https://zoey-photography-storage.s3.us-east-2.amazonaws.com/BayArea/bay1.webp",
+        "https://zoey-photography-storage.s3.us-east-2.amazonaws.com/BayArea/bay2.webp",
+        "https://zoey-photography-storage.s3.us-east-2.amazonaws.com/BayArea/bay3.webp",
+        "https://zoey-photography-storage.s3.us-east-2.amazonaws.com/BayArea/bay4.webp",
+        "https://zoey-photography-storage.s3.us-east-2.amazonaws.com/BayArea/bay5.webp"
+    ],
+    "new-york":[
+        "https://zoey-photography-storage.s3.us-east-2.amazonaws.com/NewYork/newyork1.webp",
+        "https://zoey-photography-storage.s3.us-east-2.amazonaws.com/NewYork/newyork2.webp",
+        "https://zoey-photography-storage.s3.us-east-2.amazonaws.com/NewYork/newyork3.webp"
     ]
 }
 
