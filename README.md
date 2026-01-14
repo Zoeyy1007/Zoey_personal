@@ -1,2 +1,2 @@
 # Zoey_personal
-My personal website
+URL to my personal website: https://main.d2oufvqsl8mbzm.amplifyapp.com/
