@@ -3,14 +3,14 @@ import { Github, Linkedin, Mail} from 'lucide-react';
 export default function Home() {
     return (
         <>
-        <div className="min-h-screen bg-zinc-400">
+        <div className="min-h-screen bg-zinc-300">
             {/*empty container*/}
             <div className="flex flex-col md:flex-row py-15"></div>
             {/*background image container */}
             <div className="absolute inset-0 z-0 pointer-events-none">
                 <img src="/Bigbear1.webp"
                 className="w-full h-full object-cover" alt="Background"/>
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-zinc-400/20 to-zinc-400"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-zinc-100/20 to-zinc-400"></div>
             </div>
 
             {/* Text content container */}

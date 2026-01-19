@@ -1,12 +1,11 @@
 import { Link } from 'react-router-dom';
 
 const cities = [
-    {id: 1, name: "Los Angeles", slug: "los-angeles"}, 
-    {id: 2, name: "Bay Area", slug: "bay-area"}, 
-    {id: 3, name: "Guangzhou", slug:"guangzhou"},
-    {id: 4, name: "Las Vegas", slug:"las-vegas"}, 
-    {id: 5, name:"New York", slug:"new-york"},
-    {id: 6, name: "Shenzhen", slug:"shenzhen"}
+    {id: 1, name: "Guangzhou", slug: "guangzhou"}, 
+    {id: 2, name: "Bay Area", slug:"bay-area"},
+    {id: 3, name: "Las Vegas", slug:"las-vegas"}, 
+    {id: 4, name:"New York", slug:"new-york"},
+    {id: 5, name: "Shenzhen", slug:"shenzhen"}
 ]
 
 export default function Gallery() {
@@ -14,7 +13,7 @@ export default function Gallery() {
         <>
             <div className='absolute inset-0 z-0 pointer-events-none'>
                 <img src="/baiyun.webp" alt="Background" className='w-full h-full object-cover' />
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-zinc-400/20 to-zinc-400"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-300/20 to-slate-100"></div>
             </div>
 
             <div className=" relative min-h-screen pt-10 px-10 z-10">

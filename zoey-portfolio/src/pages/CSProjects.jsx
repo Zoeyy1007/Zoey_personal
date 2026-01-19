@@ -45,7 +45,7 @@ export default function CSProjects(){
         setOpenID(openID === id ? null:id); //close if already open, else open new one
     };
     return (
-        <div className="bg-zinc-400 pt-20 px-10 min-h-screen">
+        <div className="bg-gradient-to-b from-slate-300 to-slate-100 pt-20 px-10 min-h-screen">
                 <div className="flex flex-col items-center">
                     <h1 className="font-serif text-4xl font-bold">
                         CS PROJECTS

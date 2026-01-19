@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const S3_PHOTO_DATA = {
     "guangzhou":[
@@ -28,6 +29,7 @@ const S3_PHOTO_DATA = {
 export default function CityDetail() {
     const {cityName} = useParams();
     const photos = S3_PHOTO_DATA[cityName?.toLowerCase()] || [];
+    const navigate = useNavigate();
 
     //state to track the currently selected image index
     const [selectedIndex, setSelectedIndex] = useState(0);
@@ -41,7 +43,12 @@ export default function CityDetail() {
 
     return (
         <>
-        <div className="bg-zinc-400 min-h-screen pt-25 px-10 flex flex-col items-center">
+        <div className="bg-gradient-to-b from-slate-300 to-slate-100 min-h-screen pt-25 px-10 flex flex-col items-center">
+            <button 
+                onClick={() => navigate(-1)} //-1 goes back one step in history
+                className="absolute top-28 left-10 text-white bg-black/30 px-4 rounded-lg hover:bg-black z-50">
+                    ← Back
+            </button>
             {/* The main view */}
             <div className="w-full max-w-5xl h-[70vh] px-10 mb-10 flex justify-center items-center">
                 <a href={photos[selectedIndex]} target="_blank" rel="noreferrer" className="h-full">
